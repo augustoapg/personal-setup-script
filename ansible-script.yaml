@@ -1,0 +1,45 @@
+- name: Install MacOS Packages
+  hosts: localhost
+  become: false
+  vars:
+    brew_cask_packages:
+      - docker
+      - firefox
+      - iterm2
+      - google-cloud-sdk
+      - postman
+      - ngrok
+      - postico
+      - visual-studio-code
+      - google-chrome
+      - amethyst
+    brew_packages:
+      - docker-compose
+      - git
+      - go
+      - postgresql
+      - yarn
+      - redis
+      - node
+    upgrade_homebrew_packages: true
+
+  tasks:
+    - name: Upgrading Homebrew Packages
+      homebrew:
+        upgrade_all: '{{ upgrade_homebrew_packages }}'
+      register: result
+      until: result is successful
+
+    - name: Installing Homebrew Cask Packages
+      homebrew_cask:
+        name: '{{ brew_cask_packages }}'
+        state: present
+      register: result
+      until: result is successful
+
+    - name: Installing Homebrew Packages
+      homebrew:
+        name: '{{ brew_packages }}'
+        state: present
+      register: result
+      until: result is successful

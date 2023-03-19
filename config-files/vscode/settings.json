@@ -1,0 +1,64 @@
+{
+    "workbench.iconTheme": "vscode-icons",
+    "workbench.colorTheme": "GitHub Dark",
+    "[typescriptreact]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "gitPrefix.pattern": "(^SNET-[0-9]*)",
+    "[jsonc]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[json]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[css]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "javascript.preferences.quoteStyle": "single",
+    "typescript.preferences.quoteStyle": "single",
+    "diffEditor.ignoreTrimWhitespace": false,
+    "[typescript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "prettier.singleQuote": true,
+    "prettier.trailingComma": "all",
+    "go.toolsManagement.autoUpdate": true,
+    "[scss]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[html]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "vsicons.dontShowNewVersionMessage": true,
+  
+    "terminal.integrated.fontFamily": "MesloLGS NF",
+    "terminal.integrated.gpuAcceleration": "canvas",
+    "inline-parameters.enabled": true,
+    "editor.fontLigatures": true,
+    "editor.fontFamily": "JetBrains Mono, Menlo, Monaco, 'Courier New', monospace",
+    "cSpell.userWords": [
+      "crowdriff",
+      "dbuild",
+      "ddeploy",
+      "envconfig",
+      "firestore",
+      "gcdev",
+      "gcloud",
+      "storyapi",
+      "twitsprout"
+    ],
+    "[python]": {
+      "editor.formatOnType": true
+    },
+    "redhat.telemetry.enabled": false,
+    "[javascriptreact]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[dockercompose]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+  }
+  
