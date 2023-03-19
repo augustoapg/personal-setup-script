@@ -19,7 +19,7 @@
       - docker-compose
       - git
       - go
-      - postgresql
+      - postgresql@15
       - yarn
       - redis
       - node
@@ -36,12 +36,13 @@
       homebrew_cask:
         name: '{{ brew_cask_packages }}'
         state: present
+        accept_external_apps: true
       register: result
-      until: result is successful
+      ignore_errors: true
 
     - name: Installing Homebrew Packages
       homebrew:
         name: '{{ brew_packages }}'
         state: present
       register: result
-      until: result is successful
+      ignore_errors: true
