@@ -13,6 +13,8 @@
       - visual-studio-code
       - google-chrome
       - amethyst
+      - mos
+      - dbeaver-community
     brew_packages:
       - docker-compose
       - git
